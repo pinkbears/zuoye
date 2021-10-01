@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>逐帧动画</title>
+		<style>
+			.loading{
+				height: 100px;
+				width: 100px;
+				background: url(loading.png) left no-repeat;
+				animation: fly 5s steps(8) infinite;
+			}
+			@keyframes fly{
+				from{background-position: 0 0;}
+				to{background-position: -800px 0;}
+			}
+			.hua{
+				height: 119px;
+				width: 73px;
+				background: url(hua.jpg) left no-repeat;
+				animation: fly1 6s steps(6) infinite;
+			}
+			@keyframes fly1{
+				from{background-position: 0 0;}
+				to{background-position: -438px 0;}
+			}
+			.jd{
+				height:681.7px;
+				width:662px;
+				background: url(jd.png) left no-repeat;
+				animation: fly2 3s steps(3) infinite;
+			}
+			@keyframes fly2{
+				from{background-position: 0 0;}
+				to{background-position:0 -2045px;}
+			}
+			.run{
+				height:140px;
+				width:140px;
+				background: url(run.png) left no-repeat;
+				animation: fly3 10s steps(12) infinite;
+			}
+			@keyframes fly3{
+				from{background-position: 0 0;}
+				to{background-position: -1680px 0;}
+			}
+			.run2{
+				height:156px;
+				width:137.2px;
+				background: url(run2.png) left no-repeat;
+				animation: fly4 10s steps(10) infinite;
+			}
+			@keyframes fly4{
+				from{background-position: 0 0;}
+				to{background-position: -1372px 0;}
+			}
+			.walk{
+				height:293px;
+				width:180px;
+				background: url(walk.jpg) left no-repeat;
+				animation: fly5 6s steps(6) infinite;
+			}
+			@keyframes fly5{
+				from{background-position: 0 0;}
+				to{background-position: -1080px 0;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loading"></div>
+		<div class="hua"></div>
+		<div class="jd"></div>
+		<div class="run"></div>
+		<div class="run2"></div>
+		<div class="walk"></div>
+	</body>
+</html>
